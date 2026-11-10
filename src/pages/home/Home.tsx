@@ -1,6 +1,7 @@
 import './Home.scss'
 import imgTitle from '../../assets/Image_source_1.png'
-import imgFigure from '../../assets/Carrousel.png'
+import LogementsData from '../../datas/logements.json'
+import { LogementCard } from '../../components/logementCard/LogementCard'
 
 
 export const Home = () => {
@@ -15,29 +16,12 @@ export const Home = () => {
             </div>
 
             <section className='gallery'>
-                <figure className='gallery-figure'>
-                    <img src={imgFigure} alt="Logement" />
-                    <figcaption>Titre de la location</figcaption>
-                </figure>
 
-                <figure className='gallery-figure'>
-                    <img src={imgFigure} alt="Logement" />
-                    <figcaption>Titre de la location</figcaption>
-                </figure>
+                {LogementsData.map((logement) => (
+                    <LogementCard key={logement.id} dataId={logement.id} title={logement.title} cover={logement.cover} />
+                ))}
 
-                <figure className='gallery-figure'>
-                    <img src={imgFigure} alt="Logement" />
-                    <figcaption>Titre de la location</figcaption>
-                </figure>
-                <figure className='gallery-figure'>
-                    <img src={imgFigure} alt="Logement" />
-                    <figcaption>Titre de la location</figcaption>
-                </figure>
 
-                <figure className='gallery-figure'>
-                    <img src={imgFigure} alt="Logement" />
-                    <figcaption>Titre de la location</figcaption>
-                </figure>
             </section>
         </section>
     )
