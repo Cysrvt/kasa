@@ -2,9 +2,14 @@ import './About.scss'
 
 export const About = () => {
     return (
-        <div>
-            <img src="src/assets/Image_source_2.png" alt="Image d'une rivière entre des montagnes" />
-            <section>
+        <div className="about">
+            <img
+                className="about-banner"
+                src="src/assets/Image_source_2.png"
+                alt="Image d'une rivière entre des montagnes"
+            />
+
+            <section className="about-content">
                 <article>
                     <h2>Fiabilité</h2>
                     <p>Les annonces postées sur Kasa garantissent une fiabilité totale. Les photos sont conformes aux logements, et toutes les informations sont régulièrement vérifiées pas nos équipes.</p>
