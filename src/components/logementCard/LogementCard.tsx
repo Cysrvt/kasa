@@ -10,7 +10,6 @@ type CardProps = {
 };
 
 export const LogementCard: React.FC<CardProps> = ({ dataId, title, cover }) => {
-    console.log(dataId)
     return (
         <Link to={`/logement/${dataId}`}>
             <figure className='gallery-figure'>
