@@ -1,8 +1,9 @@
 import './DetailLogement.scss'
 import { useParams } from 'react-router-dom'
 import logementData from '../../datas/logements.json'
+import { Collapse } from '../../components/collapse/Collapse'
 
-export const DetailLogement = () => {
+export const DetailLogement: React.FC = () => {
     const { id } = useParams()
     const logement = logementData.find((logement) => logement.id === id)
 
@@ -51,7 +52,7 @@ export const DetailLogement = () => {
                                         : 'star-inactive'
                                 }
                             >
-                                ★
+                                <i className="fa-solid fa-star"></i>
                             </span>
                         ))}
                     </div>
@@ -59,26 +60,29 @@ export const DetailLogement = () => {
                 </div>
             </div>
             <div className="logement-collapse">
+                <div className="collapse">
+                    <Collapse
+                        title="Descrition"
+                        content={logement.description}
+                    />
+                </div>
 
-                <article className="collapse">
-                    <h2>Description</h2>
-                    <div className="collapse-content">
-                        <p>{logement.description}</p>
-                    </div>
-                </article>
+                <div className="collapse">
+                    <Collapse
+                        title="Equipenemt"
+                        content={
+                            <ul>
+                                {logement.equipments.map((equipment) => (
+                                    <li key={equipment}>
+                                        {equipment}
+                                    </li>
+                                ))}
+                            </ul>}
+                    />
+                </div>
 
-                <article className="collapse">
-                    <h2>Équipements</h2>
-                    <div className="collapse-content">
-                        <ul>
-                            {logement.equipments.map((equipment) => (
-                                <li key={equipment}>
-                                    {equipment}
-                                </li>
-                            ))}
-                        </ul>
-                    </div>
-                </article>
+
+
 
             </div>
 
