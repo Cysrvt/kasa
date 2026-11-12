@@ -2,6 +2,7 @@ import React from 'react'
 import './DetailLogement.scss'
 import { useParams } from 'react-router-dom'
 import logementData from '../../datas/logements.json'
+import { Error } from '../error/Error'
 import { Collapse } from '../../components/collapse/Collapse'
 
 export const DetailLogement: React.FC = () => {
@@ -9,7 +10,7 @@ export const DetailLogement: React.FC = () => {
     const logement = logementData.find((logement) => logement.id === id)
 
     if (!logement) {
-        return <p>Logement introuvable</p>
+        return <Error />
     }
 
     return (
