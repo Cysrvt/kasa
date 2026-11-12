@@ -1,3 +1,4 @@
+import React from 'react'
 import './DetailLogement.scss'
 import { useParams } from 'react-router-dom'
 import logementData from '../../datas/logements.json'

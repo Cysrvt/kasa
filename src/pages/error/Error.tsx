@@ -1,8 +1,9 @@
+import type React from 'react'
 import './Error.scss'
 import { Link } from 'react-router-dom'
 
 
-export const Error = () => {
+export const Error: React.FC = () => {
     return (
         <div>
             <h1>404</h1>

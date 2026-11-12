@@ -1,10 +1,11 @@
+import type React from 'react'
 import './Home.scss'
 import imgTitle from '../../assets/Image_source_1.png'
 import LogementsData from '../../datas/logements.json'
 import { LogementCard } from '../../components/logementCard/LogementCard'
 
 
-export const Home = () => {
+export const Home: React.FC = () => {
     return (
         <section className='home-content'>
             <div className='gallery-header'>
