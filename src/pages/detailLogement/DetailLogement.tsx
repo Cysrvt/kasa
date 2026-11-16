@@ -4,6 +4,7 @@ import { useParams } from 'react-router-dom'
 import logementData from '../../datas/logements.json'
 import { Error } from '../error/Error'
 import { Collapse } from '../../components/collapse/Collapse'
+import { Carousel } from '../../components/carousel/Carousel'
 
 export const DetailLogement: React.FC = () => {
     const { id } = useParams()
@@ -15,12 +16,7 @@ export const DetailLogement: React.FC = () => {
 
     return (
         <section className="detail-logement">
-            <div className="logement-pictures">
-                <img
-                    src={logement.pictures[0]}
-                    alt={logement.title}
-                />
-            </div>
+            <Carousel pictures={logement.pictures} />
 
             <div className="logement-info">
                 <div className="logement-left">
