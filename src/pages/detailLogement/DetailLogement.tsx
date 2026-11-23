@@ -60,14 +60,14 @@ export const DetailLogement: React.FC = () => {
             <div className="logement-collapse">
                 <div className="collapse">
                     <Collapse
-                        title="Descrition"
+                        title="Description"
                         content={logement.description}
                     />
                 </div>
 
                 <div className="collapse">
                     <Collapse
-                        title="Equipenemt"
+                        title="Equipements"
                         content={
                             <ul>
                                 {logement.equipments.map((equipment) => (

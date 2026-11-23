@@ -1,24 +1,6 @@
 .detail-logement {
-    width: 100%;
     padding-bottom: 50px;
 
-    .logement-pictures {
-        width: 100%;
-        height: 415px;
-        border-radius: 25px;
-        overflow: hidden;
-
-        img {
-            width: 100%;
-            height: 100%;
-            object-fit: cover;
-        }
-
-        @media (max-width: 768px) {
-            height: 255px;
-            border-radius: 10px;
-        }
-    }
 
     .logement-info {
         display: flex;
@@ -67,7 +49,6 @@
                 min-width: 115px;
                 min-height: 25px;
                 padding: 3px 15px;
-                box-sizing: border-box;
                 background-color: #ff6060;
                 color: white;
                 border-radius: 10px;

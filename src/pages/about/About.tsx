@@ -1,6 +1,7 @@
 import React from 'react'
 import './About.scss'
 import contentData from "../../datas/string.json"
+import imgBanner from '../../assets/Image_source_2.png'
 import { Collapse } from '../../components/collapse/Collapse'
 
 export const About: React.FC = () => {
@@ -8,7 +9,7 @@ export const About: React.FC = () => {
         <div className="about">
             <img
                 className="about-banner"
-                src="src/assets/Image_source_2.png"
+                src={imgBanner}
                 alt="Image d'une rivière entre des montagnes"
             />
 

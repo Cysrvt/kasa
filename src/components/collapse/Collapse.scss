@@ -1,6 +1,5 @@
 .collapse-element {
     height: 5.5vh;
-    font-family: "Montserrat", sans-serif;
     margin-top: 2%;
     transition-duration: 1s;
     overflow: hidden;
@@ -34,13 +33,13 @@
         margin: 0;
     }
 
-    p {
+    div {
         display: flex;
         flex-direction: column;
         align-items: flex-start;
         background-color: rgba(246, 246, 246, 0.45);
         border-radius: 5px;
-        font-size: 1.5vh;
+        font-size: 16px;
         font-weight: 500;
         margin: 0;
         padding: 1rem;
@@ -54,10 +53,9 @@
             rotate: -180deg;
         }
 
-        p {
+        div {
             transform: translateY(0);
             opacity: 1;
-            transition-duration: 0.5s;
         }
 
     }
@@ -76,22 +74,6 @@
             i {
                 font-size: 3vw;
                 right: 3%;
-            }
-        }
-
-        p {
-            font-size: 1.5vh;
-        }
-
-        &.active {
-
-            i {
-                rotate: -180deg;
-            }
-
-            p {
-                transform: translateY(0);
-                opacity: 1;
             }
         }
     }

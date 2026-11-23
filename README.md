@@ -1,32 +1,68 @@
-# React + TypeScript + Vite
 
-This template provides a minimal setup to get React working in Vite with HMR and some Oxlint rules.
+# Kasa - Application de location immobilière
 
-Currently, two official plugins are available:
+## Présentation du projet
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+Kasa est une application web de location de logements entre particuliers, réalisée dans le cadre du projet 5 de la formation Développeur Web d'OpenClassrooms.
 
-## React Compiler
+L'objectif de ce projet est de développer une application avec React, en respectant les maquettes fournies et les fonctionnalités demandées.
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+## Technologies utilisées
 
-## Expanding the Oxlint configuration
+- React
+- TypeScript
+- React Router
+- SCSS
+- Vite
+- Font Awesome
 
-If you are developing a production application, we recommend enabling type-aware lint rules by installing `oxlint-tsgolint` and editing `.oxlintrc.json`:
+## Fonctionnalités
 
-```json
-{
-  "$schema": "./node_modules/oxlint/configuration_schema.json",
-  "plugins": ["react", "typescript", "oxc"],
-  "options": {
-    "typeAware": true
-  },
-  "rules": {
-    "react/rules-of-hooks": "error",
-    "react/only-export-components": ["warn", { "allowConstantExport": true }]
-  }
-}
-```
+- Affichage des logements à partir d'un fichier JSON.
+- Navigation entre les différentes pages avec React Router.
+- Affichage dynamique des informations de chaque logement.
+- Carrousel de photos avec navigation circulaire.
+- Composants Collapse réutilisables avec animation.
+- Affichage des équipements, des tags et des notes des logements.
+- Gestion des erreurs avec une page 404.
+- Interface responsive adaptée aux ordinateurs et aux mobiles.
 
-See the [Oxlint rules documentation](https://oxc.rs/docs/guide/usage/linter/rules) for the full list of rules and categories.
+## Installation et lancement du projet
+
+### Prérequis
+
+- Node.js
+- npm
+
+### Installation
+
+1. Cloner le dépôt GitHub.
+2. Ouvrir un terminal à la racine du projet.
+3. Installer les dépendances :
+
+   ```bash
+   npm install
+   ```
+
+4. Lancer le serveur de développement :
+
+   ```bash
+   npm run dev
+   ```
+
+5. Ouvrir l'adresse indiquée dans le terminal pour accéder à l'application.
+
+
+## Compétences développées
+
+- Création de composants React réutilisables.
+- Gestion des props et des états.
+- Utilisation des hooks React.
+- Typage des composants avec TypeScript.
+- Gestion des routes et des paramètres d'URL.
+- Utilisation de SCSS pour organiser les styles.
+- Intégration d'une interface responsive à partir de maquettes.
+
+## Contexte
+
+Projet 5 - Formation Développeur Web OpenClassrooms.

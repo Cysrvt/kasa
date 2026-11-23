@@ -1,5 +1,5 @@
 header {
-    font-weight: 500;
+    font-weight: 600;
     display: flex;
     text-transform: uppercase;
     justify-content: space-between;
@@ -31,11 +31,10 @@ nav {
         gap: unset;
     }
 
-    & a {
+    a {
         text-decoration: none;
         color: #000;
         font-size: 15px;
-        font-weight: 600;
         margin: 0 0 0 3vw;
 
         @media (min-width: 768px) {
